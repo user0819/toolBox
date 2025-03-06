@@ -9,4 +9,10 @@ import java.util.List;
 @Mapper
 public interface WebsiteDetailMapper {
     List<WebsiteDetail> findByCategoryId(Integer categoryId);
+
+    int updateDetail(WebsiteDetail websiteDetail);
+
+    int deleteById(Integer id);
+
+    int saveDetail(WebsiteDetail websiteDetail);
 }

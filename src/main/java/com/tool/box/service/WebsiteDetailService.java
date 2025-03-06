@@ -15,4 +15,17 @@ public class WebsiteDetailService {
     public List<WebsiteDetail> findByCategoryId(Integer categoryId) {
         return websiteDetailMapper.findByCategoryId(categoryId);
     }
+
+    public int updateById(WebsiteDetail websiteDetail) {
+        return websiteDetailMapper.updateDetail(websiteDetail);
+
+    }
+
+    public int deleteById(Integer id) {
+        return websiteDetailMapper.deleteById(id);
+    }
+
+    public int saveDetail(WebsiteDetail websiteDetail) {
+        return websiteDetailMapper.saveDetail(websiteDetail);
+    }
 }
