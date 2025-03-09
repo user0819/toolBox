@@ -28,4 +28,12 @@ public class WebsiteDetailService {
     public int saveDetail(WebsiteDetail websiteDetail) {
         return websiteDetailMapper.saveDetail(websiteDetail);
     }
+
+    public int updateSort(List<WebsiteDetail> websiteDetailList) {
+        int count = 0;
+        for (WebsiteDetail websiteDetail : websiteDetailList) {
+            count +=websiteDetailMapper.updateDetail(websiteDetail);
+        }
+        return count;
+    }
 }

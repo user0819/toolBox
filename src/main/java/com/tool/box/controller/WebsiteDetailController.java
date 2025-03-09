@@ -34,4 +34,8 @@ public class WebsiteDetailController {
         return websiteDetailService.saveDetail(websiteDetail);
     }
 
+    @PutMapping("/sort")
+    public int sort(@RequestBody List<WebsiteDetail> websiteDetailList) {
+        return websiteDetailService.updateSort(websiteDetailList);
+    }
 }
